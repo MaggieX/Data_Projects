@@ -13,13 +13,13 @@ Methodologically this was completed by using [BeautifulSoup](https://www.crummy.
 
 _TOOLS USED_: Python - BeautifulSoup, regex, networkx, matplotlib
 
-![network graph]()
+![network graph](https://github.com/cicilishuaili/DS_projects/blob/master/images/Social_graph.jpg)
 
 ## (2) Using PostGreSQL and Pandas To Investigate NYC Restaurants
 
 The city of New York inspect roughly 24,000 restaurants a year and assigns a grade to restaurants after each inspection, over a decade this creates a public dataset of over 500,000 records. SQL and Pandas were used to parse and analyze a decade worth of NYC Restaurant Inspections data. Different slices determining the grade distribution by zipcode, borough, and cuisine were extracted, with some cuisines tended to have a disproportionate number of which violations.
 
-![carto map]()
+![cartoDB map](https://github.com/cicilishuaili/DS_projects/blob/master/images/Carto_DB_map.png)
 
 _TOOLS USED_: SQL, Pandas, numPy, matplotlib, seaborn, bokeh, CartoDB
 
@@ -84,7 +84,7 @@ _TOOLS USED_: Spark, PySpark
 
 Neural networks are all the rage in ML, and deservedly so for their high performance in tasks that spans far beyond image classification. In this project, a series of models are built to classify a series of images into one of ten classes ('airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'). For expediency, these images are pretty small ( 32×32×3 ). This can make classification a bit tricky—-human performance is only about 94%. 
 
-![]()
+![example image](https://github.com/cicilishuaili/DS_projects/blob/master/images/TF_image.png)
 
 The image above is a frog. (Now you see it!)
 

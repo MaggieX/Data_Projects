@@ -1,4 +1,4 @@
-# DS_projects
+# Data Science Projects
 A sample of projects done as part of the [Data Incubator fellowship](https://www.thedataincubator.com/), an intensive, 8 week, bootcamp-style program that helps top data and science talent leaving academia with advanced degrees transition to roles as professional data scientists.
 
 The projects were done in Jupyter/ iPython notebooks using the Digital Ocean cloud computing platform.

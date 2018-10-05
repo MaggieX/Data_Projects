@@ -41,9 +41,9 @@ _TOOLS USED_: SQL, CartoDB
 
 Interactive visualizations are used over the course of the project. Bokeh, Flask, and Heroku all come together to visually engage, describe and inform. For more details refer to the [Flask Demo App Repo](https://github.com/cicilishuaili/Flask) and [Capstone Project Repo](https://github.com/cicilishuaili/Ax-Gender-Tax).
 
-![Flask demo](Stock.png)
+![Flask demo](https://github.com/cicilishuaili/DS_projects/blob/master/images/Stock.png)
 
-![Capstone](tf_idf.png)
+![Capstone](https://github.com/cicilishuaili/DS_projects/blob/master/images/tf_idf.png)
 
 _TOOLS USED_: Flask, Pandas, Heroku, PostGreSQL
 

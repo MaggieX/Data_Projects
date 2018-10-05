@@ -15,21 +15,13 @@ _TOOLS USED_: Python - BeautifulSoup, regex, networkx, matplotlib
 
 ![network graph](https://github.com/cicilishuaili/DS_projects/blob/master/images/Social_graph.jpg)
 
-## (2) Using PostGreSQL and Pandas To Investigate NYC Restaurants
+## (2) Using Semi-Structured Data to Predict Yelp Ratings
 
-The city of New York inspect roughly 24,000 restaurants a year and assigns a grade to restaurants after each inspection, over a decade this creates a public dataset of over 500,000 records. SQL and Pandas were used to parse and analyze a decade worth of NYC Restaurant Inspections data. Different slices determining the grade distribution by zipcode, borough, and cuisine were extracted, with some cuisines tended to have a disproportionate number of which violations.
-
-![cartoDB map](https://github.com/cicilishuaili/DS_projects/blob/master/images/Carto_DB_map.png)
-
-_TOOLS USED_: SQL, Pandas, numPy, matplotlib, seaborn, bokeh, CartoDB
-
-## <a name="head_ref3"></a>(3) Using Semi-Structured Data to Predict Yelp Ratings
-
-<a href="https://www.yelp.com/developers/documentation/v2/business">The Yelp dataset</a> contains unstructured meta data about each venue (city, latitude/longitude, category descriptions, etc), and a star rating. Predicting a new venue's popularity from such information makes for a great ML problem. It had all the classics from data wrangling in JSON, feature engineering, creating custom transformers in the ML pipeline, to an [ensemble regressor](http://scikit-learn.org/stable/modules/ensemble.html) 
+<a href="https://www.yelp.com/developers/documentation/v2/business">The Yelp dataset</a> contains unstructured meta data about each venue (city, latitude/longitude, category descriptions, etc), and a star rating. Predicting a new venue's popularity from such information makes for a great ML problem. It had all the classics from data wrangling in JSON, feature engineering, creating custom transformer in the ML pipeline, to an [ensemble regressor](http://scikit-learn.org/stable/modules/ensemble.html) 
 
 _TOOLS USED_: numpy, pandas, sklearn
 
-## (4) Analyzing Wikipedia via MapReduce
+## (3) Analyzing Wikipedia via MapReduce
 
 A large set of English Wikipedia was scraped to determine its most frequently used words and link statistics for the unique links on each page.
 
@@ -37,13 +29,31 @@ Distributed computing is ideal for these types of tasks, as they allow for paral
 
 _TOOLS USED_: Hadoop MapReduce, MRJob, BeautifulSoup, Google Cloud Platform, AWS
 
+## (4) Using SQL To Investigate NYC Restaurants
+
+The city of New York inspect roughly 24,000 restaurants a year and assigns a grade to restaurants after each inspection, over a decade this creates a public dataset of over 500,000 records. SQL was used to parse and analyze a decade worth of NYC Restaurant Inspections data. Different slices determining the grade distribution by zipcode, borough, and cuisine were extracted, with some cuisines tended to have a disproportionate number of which violations.
+
+![cartoDB map](https://github.com/cicilishuaili/DS_projects/blob/master/images/Carto_DB_map.png)
+
+_TOOLS USED_: SQL, CartoDB
+
 ## (5) Data Visualization
 
 Interactive visualizations are used over the course of the project. Bokeh, Flask, and Heroku all come together to visually engage, describe and inform. For more details refer to the [Flask Demo App Repo](https://github.com/cicilishuaili/Flask) and [Capstone Project Repo](https://github.com/cicilishuaili/Ax-Gender-Tax).
 
+![Flask demo](Stock.png)
+
+![Capstone](tf_idf.png)
+
 _TOOLS USED_: Flask, Pandas, Heroku, PostGreSQL
 
-## (6) Using Time Series Machine Learning to Predict the Weather
+## (6) Using NLP to Predict Yelp Ratings
+
+Given the richness of information contained in the texts, Yelp review data was explored for in the context of predicting ratings. Various natural language processing (NLP) techniques were explored on the text data. At its most fundamental, the words need to be transformed into quantities via tokenizers and vectorizers.
+
+_TOOLS USED_: nltk, numpy, pandas, sklearn
+
+## (7) Using Time Series Machine Learning to Predict the Weather
 
 Time series prediction presents its own set of unique challenges in ML problems. A linear regression would likely fail on the basis of the existence of autocorrelation. Periodicity/ seasonality and drift add to considerations. Sliding windows and forward chaining need to replace traditional cross-validation techniques. 
 
@@ -59,37 +69,31 @@ which is linear in ![alt text](https://latex.codecogs.com/gif.latex?%24A%24) and
 
 _TOOLS USED_: numpy, pandas, sklearn
 
-## (7) Using NLP to Predict Yelp Ratings
-
-Given the richness of information contained in the texts, Yelp review data was explored for in the xontext of predicting ratings. Various natural language processing (NLP) techniques were explored on the text data. At its most fundamental, the words need to be transformed into quantities via tokenizers and vectorizers.
-
-_TOOLS USED_: nltk, numpy, pandas, sklearn
-
-## (8) Using ML to Categorize Music Samples
-
-Audio/music offers another source of rich data. The objective of this miniproject is to develop models that are able to recognize the genre of a musical piece (_electronic, folkcountry, jazz, raphiphop, rock_), first from pre-computed features and then from the raw waveform (input files with 5-10 seconds of a music sample). This is a typical example of a classification problem on time series data. 
-
-_TOOLS USED_: numpy, scipy, Librosa, audioread, audioop, pandas, dill, *sklearn* - preprocessing, ensemble, LabelEncoder, DecisionTreeClassifier, StandardScaler, normalize, PCA, RandomForestClassifier, Pipeline, SVM, SVC
-
-## (9) SparkOverflow - Using Spark to Analyze StackOverflow Data
+## (8) SparkOverflow - Using Spark to Analyze StackOverflow Data
 
 [StackOverflow](https://stackoverflow.com/) is a collaboratively edited question-and-answer site focused on programming topics. Because of the variety of features tracked, including a variety of feedback metrics, it allows for some open-ended analysis of user behavior on the site.
 
 StackExchange (the parent organization) provides an anonymized <a href="https://archive.org/details/stackexchange">data dump</a>, this project used Spark for data manipulation, analysis, and machine learning. Similar to the MapReduce project, this is an ideal use for distributed computing. <a href="https://spark.apache.org/">Spark</a> is Hadoop's bigger, better, stronger, faster cousin -- and runs on top of HDFS with the ability to cache, significantly increasing the speed over traditional Hadoop/MapReduce jobs.  Using [PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.html), a massive dataset of unstructured XML files was analyzed.
 
-_TOOLS USED_: Spark, PySpark
+_TOOLS USED_: Spark, PySpark, Spark MLlib, Word2Vec
 
 
-## (10) TensorFlow - Building Neural Networks from the Ground Up for Image Classification
+## (9) TensorFlow - Building Neural Networks from the Ground Up for Image Classification
 
-Neural networks are all the rage in ML, and deservedly so for their high performance in tasks that spans far beyond image classification. In this project, a series of models are built to classify a series of images into one of ten classes ('airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'). For expediency, these images are pretty small ( 32×32×3 ). This can make classification a bit tricky—-human performance is only about 94%. 
+Neural networks are all the rage in ML, and deservedly so for their high performance in tasks that spans far beyond image classification. In this project, a series of models are built to classify a series of images into one of ten classes ('airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'). For expediency, these images are pretty small (32×32×3). This can make classification a bit tricky—-human performance is only about 94%. 
 
 ![example image](https://github.com/cicilishuaili/DS_projects/blob/master/images/TF_image.png)
 
 The image above is a frog. (Now you see it!)
 
-TensorFlow is a popular framework as it is an open-source software library for "dataflow" programming. Computations are expressed as stateful dataflow graphs. It begets its name from the operations neural networks performs on multidimensional data arrays ("tensors").computations are expressed as stateful dataflow graphs. The name TensorFlow derives from the operations that such neural networks perform on multidimensional data arrays. 
+TensorFlow is a popular framework as it is an open-source software library for "dataflow" programming. Computations are expressed as stateful dataflow graphs. Computations are expressed as stateful dataflow graphs. The name TensorFlow derives from the operations that such neural networks perform on multidimensional data arrays (AKA "tensors"). 
 
-A multi-layer fully-connected neural network achieves an accuracy of about 44% on a training set and 41% on a test set. A simple convolutional neural net achieves accuracy of 80% on a training set and 70% on a test set.
+A multi-layer fully-connected neural network achieves an accuracy of about 44% on a training set and 41% on a test set. A simple convolutional neural net achieves accuracy of 80% on a training set and 70% on a test set. A simple transfer learning model based on GoogLeNet achieves a training accuracy of 87% and a test accuracy of 85%.
 
 _TOOLS USED_: TensorFlow
+
+## (Optional) Using ML to Categorize Music Samples
+
+Audio/music offers another source of rich data. The objective of this miniproject is to develop models that are able to recognize the genre of a musical piece (_electronic, folkcountry, jazz, raphiphop, rock_), first from pre-computed features and then from the raw waveform (input files with 5-10 seconds of a music sample). This is a typical example of a classification problem on time series data. 
+
+_TOOLS USED_: numpy, scipy, Librosa, audioread, audioop, pandas, dill, *sklearn* - preprocessing, ensemble, LabelEncoder, DecisionTreeClassifier, StandardScaler, normalize, PCA, RandomForestClassifier, Pipeline, SVM, SVC

@@ -43,7 +43,7 @@ Interactive visualizations are used over the course of the project. Bokeh, Flask
 
 ![Flask demo](https://github.com/cicilishuaili/DS_projects/blob/master/images/Stock.png)
 
-![Capstone](https://github.com/cicilishuaili/DS_projects/blob/master/images/tf_idf.png)
+![Capstone](https://github.com/cicilishuaili/DS_projects/blob/master/images/tf-idf.png)
 
 _TOOLS USED_: Flask, Pandas, Heroku, PostGreSQL
 
@@ -51,7 +51,7 @@ _TOOLS USED_: Flask, Pandas, Heroku, PostGreSQL
 
 Given the richness of information contained in the texts, Yelp review data was explored for in the context of predicting ratings. Various natural language processing (NLP) techniques were explored on the text data. At its most fundamental, the words need to be transformed into quantities via tokenizers and vectorizers.
 
-_TOOLS USED_: nltk, numpy, pandas, sklearn
+_TOOLS USED_: nltk, numpy, pandas, sklearn, bigrams, n-grams
 
 ## (7) Using Time Series Machine Learning to Predict the Weather
 

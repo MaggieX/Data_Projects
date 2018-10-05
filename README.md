@@ -73,7 +73,9 @@ _TOOLS USED_: numpy, pandas, sklearn
 
 [StackOverflow](https://stackoverflow.com/) is a collaboratively edited question-and-answer site focused on programming topics. Because of the variety of features tracked, including a variety of feedback metrics, it allows for some open-ended analysis of user behavior on the site.
 
-StackExchange (the parent organization) provides an anonymized <a href="https://archive.org/details/stackexchange">data dump</a>, this project used Spark for data manipulation, analysis, and machine learning. Similar to the MapReduce project, this is an ideal use for distributed computing. <a href="https://spark.apache.org/">Spark</a> is Hadoop's bigger, better, stronger, faster cousin -- and runs on top of HDFS with the ability to cache, significantly increasing the speed over traditional Hadoop/MapReduce jobs.  Using [PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.html), a massive dataset of unstructured XML files was analyzed.
+StackExchange (the parent organization) provides an anonymized <a href="https://archive.org/details/stackexchange">data dump</a>, this project used Spark for data manipulation, analysis, and machine learning. Similar to the MapReduce project, this is an ideal use for distributed computing. <a href="https://spark.apache.org/">Spark</a> is Hadoop's bigger, better, stronger, faster cousin -- and runs on top of HDFS with the ability to cache, significantly increasing the speed over traditional Hadoop/MapReduce jobs.  
+
+Using [PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.html), a massive dataset of unstructured XML files was analyzed. With the size, we can start to train and build word embeddings via Word2Vec to find synonyms.
 
 _TOOLS USED_: Spark, PySpark, Spark MLlib, Word2Vec
 

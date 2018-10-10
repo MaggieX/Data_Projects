@@ -77,6 +77,8 @@ StackExchange (the parent organization) provides an anonymized <a href="https://
 
 Using [PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.html), a massive dataset of unstructured XML files was analyzed. With the size, we can start to train and build word embeddings via Word2Vec to find synonyms.
 
+See [here](https://github.com/cicilishuaili/Data_Projects/blob/master/spark-edited.ipynb) for a version of the notebook (edited for brevity).
+
 _TOOLS USED_: Spark, PySpark, Spark MLlib, Word2Vec
 
 

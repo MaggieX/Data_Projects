@@ -5,7 +5,7 @@ The projects were done in Jupyter/ iPython notebooks using the Digital Ocean clo
 
 Please feel free to inquire for more detailed code, out of respect for current and future fellows only select sample codes will be posted.
 
-## (1) Using Graph and Network Theory To Investigate the NYC Social Elite
+## (1) Webscraping - Examining the NYC Socialite Network
 
 <a href="http://www.newyorksocialdiary.com/">The New York Social Diary</a> provides a fascinating lens onto New York's socially well-to-do. As shown in <a href="http://www.newyorksocialdiary.com/party-pictures/2014/holiday-dinners-and-doers">this report of a holiday party</a>, almost all the photos have annotated captions labeling their subjects. We can think of this as an implied social graph: there is a connection between two individuals if they appear in a picture together.
 
@@ -15,13 +15,13 @@ _TOOLS USED_: Python - BeautifulSoup, regex, networkx, matplotlib
 
 ![network graph](https://github.com/cicilishuaili/DS_projects/blob/master/images/Social_graph.jpg)
 
-## (2) Using Semi-Structured Data to Predict Yelp Ratings
+## (2) Machine Learning - Predicting Yelp Ratings
 
 <a href="https://www.yelp.com/developers/documentation/v2/business">The Yelp dataset</a> contains unstructured meta data about each venue (city, latitude/longitude, category descriptions, etc), and a star rating. Predicting a new venue's popularity from such information makes for a great ML problem. It had all the classics from data wrangling in JSON, feature engineering, creating custom transformer in the ML pipeline, to an [ensemble regressor](http://scikit-learn.org/stable/modules/ensemble.html) 
 
 _TOOLS USED_: numpy, pandas, sklearn
 
-## (3) Analyzing Wikipedia via MapReduce
+## (3) MapReduce -- Analyzing Wikipedia
 
 A large set of English Wikipedia was scraped to determine its most frequently used words and link statistics for the unique links on each page.
 
@@ -29,7 +29,7 @@ Distributed computing is ideal for these types of tasks, as they allow for paral
 
 _TOOLS USED_: Hadoop MapReduce, MRJob, BeautifulSoup, Google Cloud Platform, AWS
 
-## (4) Using SQL To Investigate NYC Restaurants
+## (4) SQL - Investigating NYC Restaurant Inspections
 
 The city of New York inspect roughly 24,000 restaurants a year and assigns a grade to restaurants after each inspection, over a decade this creates a public dataset of over 500,000 records. SQL was used to parse and analyze a decade worth of NYC Restaurant Inspections data. Different slices determining the grade distribution by zipcode, borough, and cuisine were extracted, with some cuisines tended to have a disproportionate number of which violations.
 
@@ -47,13 +47,13 @@ Interactive visualizations are used over the course of the project. Bokeh, Flask
 
 _TOOLS USED_: Flask, Pandas, Heroku, PostGreSQL
 
-## (6) Using NLP to Predict Yelp Ratings
+## (6) NLP - Predicting Yelp Ratings
 
 Given the richness of information contained in the texts, Yelp review data was explored for in the context of predicting ratings. Various natural language processing (NLP) techniques were explored on the text data. At its most fundamental, the words need to be transformed into quantities via tokenizers and vectorizers.
 
 _TOOLS USED_: nltk, numpy, pandas, sklearn, bigrams, n-grams
 
-## (7) Using Time Series Machine Learning to Predict the Weather
+## (7) Time Series - Predicting the Weather
 
 Time series prediction presents its own set of unique challenges in ML problems. A linear regression would likely fail on the basis of the existence of autocorrelation. Periodicity/ seasonality and drift add to considerations. Sliding windows and forward chaining need to replace traditional cross-validation techniques. 
 
@@ -69,7 +69,7 @@ which is linear in ![alt text](https://latex.codecogs.com/gif.latex?%24A%24) and
 
 _TOOLS USED_: numpy, pandas, sklearn
 
-## (8) SparkOverflow - Using Spark to Analyze StackOverflow Data
+## (8) Spark - Analyzing StackOverflow Data
 
 [StackOverflow](https://stackoverflow.com/) is a collaboratively edited question-and-answer site focused on programming topics. Because of the variety of features tracked, including a variety of feedback metrics, it allows for some open-ended analysis of user behavior on the site.
 
@@ -80,7 +80,7 @@ Using [PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.htm
 _TOOLS USED_: Spark, PySpark, Spark MLlib, Word2Vec
 
 
-## (9) TensorFlow - Building Neural Networks from the Ground Up for Image Classification
+## (9) TensorFlow - Neural Networks for Image Classification
 
 Neural networks are all the rage in ML, and deservedly so for their high performance in tasks that spans far beyond image classification. In this project, a series of models are built to classify a series of images into one of ten classes ('airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'). For expediency, these images are pretty small (32×32×3). This can make classification a bit tricky—-human performance is only about 94%. 
 
@@ -94,7 +94,7 @@ A multi-layer fully-connected neural network achieves an accuracy of about 44% o
 
 _TOOLS USED_: TensorFlow
 
-## (Optional) Using ML to Categorize Music Samples
+## (Optional) ML to Categorize Music Samples
 
 Audio/music offers another source of rich data. The objective of this miniproject is to develop models that are able to recognize the genre of a musical piece (_electronic, folkcountry, jazz, raphiphop, rock_), first from pre-computed features and then from the raw waveform (input files with 5-10 seconds of a music sample). This is a typical example of a classification problem on time series data. 
 

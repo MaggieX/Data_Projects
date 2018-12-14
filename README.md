@@ -100,4 +100,4 @@ _TOOLS USED_: TensorFlow
 
 Audio/music offers another source of rich data. The objective of this miniproject is to develop models that are able to recognize the genre of a musical piece (_electronic, folkcountry, jazz, raphiphop, rock_), first from pre-computed features and then from the raw waveform (input files with 5-10 seconds of a music sample). This is a typical example of a classification problem on time series data. 
 
-_TOOLS USED_: numpy, scipy, Librosa, audioread, audioop, pandas, dill, *sklearn* - preprocessing, ensemble, LabelEncoder, DecisionTreeClassifier, StandardScaler, normalize, PCA, RandomForestClassifier, Pipeline, SVM, SVC
+_TOOLS USED_: Librosa, sklearn, PCA

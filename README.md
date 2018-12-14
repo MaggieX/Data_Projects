@@ -3,7 +3,7 @@ A sample of projects done as part of the [Data Incubator fellowship](https://www
 
 The projects were done in Jupyter/ iPython notebooks using the Digital Ocean cloud computing platform.
 
-Please feel free to inquire for more detailed code, out of respect for current and future fellows only select sample codes will be posted.
+Please feel free to inquire for more detailed code, out of considerations for current and future fellows no sample codes are yet posted.
 
 ## (1) Webscraping - Examining the NYC Socialite Network
 
